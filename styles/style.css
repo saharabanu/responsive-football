@@ -88,7 +88,7 @@ main{
    
 }
 /* -------extra part styles------ */
-section{
+.extra-work{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     margin-left: 60px;
@@ -108,4 +108,30 @@ footer{
 footer img{
     width:483px;
     height:110px;
+}
+/* --------media query styles--------- */
+/* ------mobile devices------ */
+  
+@media only screen and (max-width: 688px) {
+    header{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+
+    }
+    .players{
+        grid-template-columns:repeat(1,1fr) ;
+
+    }
+    .extra-work{
+        display:none; 
+
+    }
+
+    
+    footer{
+        display:none ;
+    }
+        
+    
 }
